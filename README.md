@@ -10,7 +10,7 @@ pip3 install Flask
 Ce script crée un serveur Flask qui affiche une liste de fichiers dans le dossier courant. 
 Les utilisateurs peuvent télécharger les fichiers en cliquant sur les liens correspondants.
 
-Pour exécuter le script, ouvrez un terminal, naviguez jusqu'au répertoire contenant le fichier "serveur.py", et exécutez la commande suivante:
+Pour exécuter le script, ouvrez un terminal, et exécutez la commande suivante:
 python3 "Serveur_fichiers_local.py"
 
 Le serveur sera alors lancé et sera accessible à l'adresse http://10.0.0.236:5000/ depuis n'importe quel navigateur web sur le réseau local.
