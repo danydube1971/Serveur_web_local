@@ -1,9 +1,12 @@
-'''Voici un script Python 3 pour Linux Mint qui utilise le module Flask pour lancer un serveur web local et afficher les fichiers du dossier courant dans le même emplacement que le script. Les autres utilisateurs du réseau local peuvent accéder au serveur en utilisant l'adresse IP 10.0.0.236 et télécharger les fichiers de la page.
+'''Voici un script Python 3 pour Linux Mint qui utilise le module Flask pour lancer un serveur web local et afficher les 
+fichiers du dossier courant dans le même emplacement que le script. Les autres utilisateurs du réseau local peuvent accéder 
+au serveur en utilisant l'adresse IP 10.0.0.236 et télécharger les fichiers de la page.
 
 Assurez-vous d'installer le module Flask en exécutant la commande suivante dans votre terminal:
 pip3 install Flask
 
-Ce script crée un serveur Flask qui affiche une liste de fichiers dans le dossier courant. Les utilisateurs peuvent télécharger les fichiers en cliquant sur les liens correspondants.
+Ce script crée un serveur Flask qui affiche une liste de fichiers dans le dossier courant. Les utilisateurs peuvent 
+télécharger les fichiers en cliquant sur les liens correspondants.
 
 Pour exécuter le script, ouvrez un terminal, naviguez jusqu'au répertoire contenant le fichier "serveur.py", et exécutez la commande suivante:
 
