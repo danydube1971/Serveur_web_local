@@ -7,7 +7,7 @@ peuvent accéder au serveur en utilisant l'adresse IP 10.0.0.236 et télécharge
 Assurez-vous d'installer le module Flask en exécutant la commande suivante dans votre terminal:
 pip3 install Flask
 
-Ce script crée un serveur Flask qui affiche une liste de fichiers dans le dossier courant en ordre alpahbétique. 
+Ce script crée un serveur Flask qui affiche une liste de fichiers dans le dossier courant et sous-dossiers en ordre alpahbétique. 
 Les utilisateurs peuvent télécharger les fichiers en cliquant sur les liens correspondants.
 
 Pour exécuter le script, ouvrez un terminal, et exécutez la commande suivante:
