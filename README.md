@@ -16,4 +16,4 @@ Pour exécuter le script, ouvrez un terminal, et exécutez la commande suivante:
 **python3 "Serveur_fichiers_local.py"**
 
 Le serveur sera alors lancé et sera accessible à l'adresse http://10.0.0.236:5000/ depuis n'importe quel navigateur web sur le réseau local.
-Pour changer l'adresse l'adresse ip du serveur, vous devez le changer dans le script.
+Pour changer l'adresse l'adresse ip du serveur, vous devez le changer dans le script à la ligne 55.
