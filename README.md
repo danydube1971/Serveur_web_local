@@ -15,7 +15,9 @@ sur Télécharger **tous les fichiers** dans un zip au bas de la page.
 ------------
 **Comment exécuter le serveur**
 
-Pour exécuter le script, ouvrez un terminal, et exécutez la commande suivante:
+Pour exécuter le script, placer le script dans le même dossier que les fichiers à partager. 
+
+Ouvrez un terminal, et exécutez la commande suivante:
 **python3 "Serveur_fichiers_local.py"**
 
 Le serveur sera alors lancé et sera accessible à l'adresse http://10.0.0.236:5000/ depuis n'importe quel navigateur web sur le réseau local.
