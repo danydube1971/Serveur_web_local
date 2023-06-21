@@ -4,6 +4,10 @@ Voici un script Python 3 pour Linux Mint qui utilise le module Flask pour lancer
 fichiers du dossier courant dans le même emplacement que le script. Les autres utilisateurs du réseau local peuvent accéder 
 au serveur en utilisant l'adresse IP 10.0.0.236 (qui est défini dans le script) par le port 5000 et télécharger les fichiers de la page.
 
+![Serveur_local_01](https://github.com/danydube1971/Serveur_web_local/assets/74633244/fe3c7e08-c27f-4647-a67d-0df1625bdf0e)
+![2023-06-21 18 17 15 10 0 0 236 a557f054504a](https://github.com/danydube1971/Serveur_web_local/assets/74633244/07a1ad05-c175-4e16-8f43-cb27982718da)
+
+
 Assurez-vous d'installer le module Flask en exécutant la commande suivante dans votre terminal:
 
 **pip3 install Flask**
