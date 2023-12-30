@@ -1,28 +1,28 @@
-# Serveur_web_local
+Testé sous Linux Mint 21.2
 
-Voici un script Python 3 pour Linux Mint qui utilise le module Flask pour lancer un serveur web local et afficher les 
-fichiers du dossier courant dans le même emplacement que le script. Les autres utilisateurs du réseau local peuvent accéder 
-au serveur en utilisant l'adresse IP 10.0.0.236 (qui est défini dans le script) par le port 5000 et télécharger les fichiers de la page.
+### Que Fait le Script ? ###
 
-![Serveur_local_01](https://github.com/danydube1971/Serveur_web_local/assets/74633244/fe3c7e08-c27f-4647-a67d-0df1625bdf0e)
-![2023-06-21 18 17 15 10 0 0 236 a557f054504a](https://github.com/danydube1971/Serveur_web_local/assets/74633244/07a1ad05-c175-4e16-8f43-cb27982718da)
+**Crée un Serveur Web Local :** Ce script lance un petit serveur web sur votre ordinateur. Vous n'avez pas besoin d'être connecté à Internet pour cela, car tout se passe localement sur votre machine.
+
+**Permet de Partager des Fichiers :** Via ce serveur web, vous pouvez accéder et partager les fichiers d'un dossier spécifique de votre ordinateur. Vous pourrez voir la liste de ces fichiers via une page web ouverte dans votre navigateur ou à partir d'un autre ordinateur dans le même réseau local.
+
+**Affiche les Fichiers de Manière Organisée :** Les fichiers sont affichés dans une liste en ordre alphabétique, avec leur taille indiquée. Cela rend la recherche et la gestion des fichiers plus facile.
+
+**Interface Utilisateur Facile à Utiliser :** Le script utilise une interface graphique simple pour vous permettre de choisir le dossier à partager et de démarrer le serveur facilement.
 
 
-Assurez-vous d'installer le module Flask en exécutant la commande suivante dans votre terminal:
+![Serveur fichiers flask](https://github.com/danydube1971/Serveur_web_local/assets/74633244/016db056-83cf-45a6-8199-56ffe3278ee3)
 
-**pip3 install Flask**
+### Comment Exécuter le Script ? ###
 
-Ce script crée un serveur Flask qui affiche une liste de fichiers dans le dossier courant et sous-dossiers en ordre alphabétique. 
-Les utilisateurs dans le même réseau local peuvent télécharger les fichiers en cliquant sur les liens correspondants ou tout télécharger en cliquant 
-sur Télécharger **tous les fichiers** dans un zip au bas de la page.
+**Ouvrir un Terminal ou Invite de Commande :** Vous devez ouvrir l'endroit où vous pouvez taper des commandes sur votre ordinateur. Sur Windows, c'est l'invite de commande ou PowerShell. Sur macOS ou Linux, c'est le terminal.
 
-------------
-**Comment exécuter le serveur**
+**Naviguer jusqu'au Script :** Utilisez des commandes pour aller au dossier où se trouve le script. Par exemple, si le script est sur le bureau, tapez cd Desktop.
 
-Pour exécuter le script, placer le script dans le même dossier que les fichiers à partager. 
+**Lancer le Script :** Tapez "python Serveur_fichiers_local_GUI.py" et appuyez sur Entrée. Assurez-vous que Python est installé sur votre ordinateur. Le dossier "templates" avec le fichier **list_files.html** doit être au même endroit que le script.
 
-Ouvrez un terminal, et exécutez la commande suivante:
-**python3 "Serveur_fichiers_local.py"**
+**Utiliser l'Interface Graphique :** Une fenêtre s'ouvrira avec des options pour sélectionner un dossier et démarrer le serveur.
 
-Le serveur sera alors lancé et sera accessible à l'adresse http://10.0.0.236:5000/ depuis n'importe quel navigateur web sur le réseau local.
-Pour changer l'adresse l'adresse ip du serveur, vous devez le changer dans le script à la ligne 55.
+**Accéder à la Page Web :** Une fois le serveur démarré, cliquez sur le bouton "Ouvrir la page du serveur"
+
+**Explorer vos Fichiers :** Sur la page web, vous verrez la liste des fichiers du dossier partagé. Vous pouvez les visualiser et les gérer depuis là.
