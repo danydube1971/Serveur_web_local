@@ -26,3 +26,8 @@ Testé sous Linux Mint 21.2
 **Accéder à la Page Web :** Une fois le serveur démarré, cliquez sur le bouton "Ouvrir la page du serveur"
 
 **Explorer vos Fichiers :** Sur la page web, vous verrez la liste des fichiers du dossier partagé. Vous pouvez les visualiser et les gérer depuis là.
+
+====================
+
+**Si vous ne pouvez pas utiliser Python, vous pouvez télécharger le binaire exécutable (comprenant toutes les dépendances y compris le dossier "templates") ci-haut (pour Linux seulement).**
+
