@@ -1,4 +1,4 @@
-Testé sous Linux Mint 21.2
+Testé sous Linux Mint Mate 21.2
 
 ### Que Fait le Script ? ###
 
