@@ -29,5 +29,5 @@ Testé sous Linux Mint Mate 21.2
 
 ====================
 
-**Si vous ne pouvez pas utiliser Python, vous pouvez télécharger le binaire exécutable (comprenant toutes les dépendances y compris le dossier "templates") ci-haut (pour Linux seulement).**
+**Si vous ne pouvez pas utiliser Python, vous pouvez télécharger le binaire exécutable *Serveur_fichiers_local_GUI* (comprenant toutes les dépendances y compris le dossier "templates") ci-haut (pour Linux seulement).**
 
