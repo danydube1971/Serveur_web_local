@@ -1,4 +1,6 @@
-Testé sous Linux Mint Mate 21.2
+# Serveur web local 1.0
+
+Testé sous Linux Mint Mate 21.2 avec python 3.11
 
 ### Que Fait le Script ? ###
 
