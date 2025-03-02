@@ -2,6 +2,8 @@ Guide d'Utilisation du Script Serveur de Fichiers
 =================================================
 Ce guide te permet de comprendre et d'utiliser le script **Serveur_fichiers_local_GUI_v2.py** pour partager un dossier (ou un site web) sur ton réseau local (via un navigateur web) à partir d'une interface graphique simple. Suis les étapes ci-dessous pour démarrer.
 
+Testé sous Linux Mint Mate 22
+
 ![Serveur_fichiers_local_GUI_v12](https://github.com/user-attachments/assets/91a3f642-0ddb-4d67-a872-710d73eb22d4)
 
 
