@@ -1,6 +1,6 @@
 Guide d'Utilisation du Script Serveur de Fichiers
 =================================================
-Ce guide te permet de comprendre et d'utiliser le script **Serveur_fichiers_local_GUI_v12.py** pour partager un dossier (ou un site web) sur ton réseau via une interface graphique simple. Suis les étapes ci-dessous pour démarrer.
+Ce guide te permet de comprendre et d'utiliser le script **Serveur_fichiers_local_GUI_v2.py** pour partager un dossier (ou un site web) sur ton réseau via une interface graphique simple. Suis les étapes ci-dessous pour démarrer.
 * * * * *
 1\. Prérequis
 -------------
@@ -27,12 +27,12 @@ Ce script combine :
 3\. Installation et Lancement
 -----------------------------
 ### a. Télécharger le Script
--   Clone ou télécharge le fichier `Serveur_fichiers_local_GUI_v12.py` depuis ton dépôt GitHub.
+-   Clone ou télécharge le fichier `Serveur_fichiers_local_GUI_v2.py` depuis ton dépôt GitHub.
 ### b. Lancer le Script
 -   Ouvre un terminal dans le dossier contenant le script.
 -   Exécute-le avec la commande :
     ```
-    python Serveur_fichiers_local_GUI_v12.py
+    python Serveur_fichiers_local_GUI_v2.py
     ```
 -   Une fenêtre GUI devrait s'ouvrir.
 * * * * *
