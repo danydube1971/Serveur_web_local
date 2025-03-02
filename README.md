@@ -34,7 +34,9 @@ Ce script combine :
 -----------------------------
 ### a. Télécharger le Script
 -   Clone ou télécharge le fichier `Serveur_fichiers_local_GUI_v2.py` depuis ton dépôt GitHub.
-### b. Lancer le Script
+### b. Télécharger le dossier templates
+-   Met le dossier templates qui contient le fichier *list_files.html* dans le même dossier du fichier `Serveur_fichiers_local_GUI_v2.py`.
+### c. Lancer le Script
 -   Ouvre un terminal dans le dossier contenant le script.
 -   Exécute-le avec la commande :
     ```
