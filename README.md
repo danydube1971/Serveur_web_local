@@ -68,6 +68,8 @@ Le serveur Flask intégré gère :
 -   **Navigation sécurisée** :\
     Seuls les fichiers et dossiers dans le dossier partagé sont accessibles.\
     Les accès non autorisés sont bloqués (code 403).
+    
+    Si une page web *index.html* est dans un dossier, le serveur affichera la page web en question.
 -   **Affichage dynamique des fichiers** :\
     Le serveur liste les dossiers et fichiers (avec leur taille en Mo) dans le dossier sélectionné.
 -   **Téléchargement de fichiers** :\
