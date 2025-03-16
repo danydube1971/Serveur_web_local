@@ -29,7 +29,7 @@ pip install PyQt6 Flask Werkzeug
 
 -   **Télécharger le dossier « templates »** qui contient le fichier list_files.index.
 
--   **Télécharger le script Serveur_fichiers_local_GUI_v28.py**
+-   **Télécharger le script Serveur_fichiers_local_GUI_v3.py**
 
 * * * * *
 
@@ -39,13 +39,13 @@ pip install PyQt6 Flask Werkzeug
 Ouvrez un terminal dans le dossier où se trouve le script et exécutez :
 
 ```
-python Serveur_fichiers_local_GUI_v28.py
+python Serveur_fichiers_local_GUI_v3.py
 ```
 
 Si vous utilisez **Python 3.12** explicitement, utilisez :
 
 ```
-python3 Serveur_fichiers_local_GUI_v28.py
+python3 Serveur_fichiers_local_GUI_v3.py
 ```
 
 L'interface graphique du serveur devrait s'afficher.
