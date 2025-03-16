@@ -1,95 +1,117 @@
-Guide d'Utilisation du Script Serveur de Fichiers
-=================================================
-Ce guide te permet de comprendre et d'utiliser le script **Serveur_fichiers_local_GUI_v2.py** pour partager un dossier (ou un site web) sur ton réseau local (via un navigateur web) à partir d'une interface graphique simple. 
+**Serveur de fichiers local avec interface graphique (Qt + Flask)**
+===================================================================
 
-Testé sous Linux Mint Mate 22
-
-![Serveur_fichiers_local_GUI_v12](https://github.com/user-attachments/assets/91a3f642-0ddb-4d67-a872-710d73eb22d4)
-
+Ce script permet de lancer un **serveur de fichiers local** (ou d'afficher une page web index.html) via **Flask**, avec une interface graphique développée en **PyQt6**. Il permet de **partager un dossier** via un serveur HTTP accessible sur le réseau local.
 
 * * * * *
-1\. Prérequis
--------------
-Avant de commencer, assure-toi d'avoir installé les éléments suivants :
--   **Python 3.7+**\
-    Vérifie ta version avec `python --version` dans ton terminal.
--   **Dépendances Python**\
-    Installe les bibliothèques nécessaires avec pip :
-    ```
-    pip install PyQt6 flask werkzeug
-    ```
 
--   **Accès à un terminal/Invite de commandes**\
-    Pour lancer le script et voir d'éventuels messages de log.
-* * * * *
-2\. Présentation du Script
---------------------------
-Ce script combine :
--   **Flask** pour créer un serveur web permettant de partager des fichiers.
--   **PyQt6** pour fournir une interface graphique conviviale.
--   Des fonctionnalités pour sélectionner un dossier, définir un port, démarrer et arrêter le serveur, et afficher les logs en temps réel.
+**1\. Pré-requis**
+------------------
+
+Avant d'exécuter le script, assurez-vous d'avoir les dépendances suivantes installées :
+
+### **Dépendances Python :**
+
+Vous devez installer **PyQt6** et **Flask** si ce n'est pas déjà fait. Ouvrez un terminal et exécutez :
+
+```
+pip install PyQt6 Flask Werkzeug
+```
+
+### **Autres pré-requis :**
+
+-   **Linux Mint** (compatible avec d'autres distributions Linux et Windows)
+
+-   **Python 3.12** ou une version compatible
+
+-   **Télécharger le dossier « templates »** qui contient le fichier list_files.index.
+
+-   **Télécharger le script Serveur_fichiers_local_GUI_v28.py**
+
 * * * * *
 
-3\. Installation et Lancement
------------------------------
-### a. Télécharger le Script
--   télécharge le fichier `Serveur_fichiers_local_GUI_v2.py`.
-### b. Télécharger le dossier templates
--   Met le dossier templates qui contient le fichier *list_files.html* dans le même dossier du fichier `Serveur_fichiers_local_GUI_v2.py`.
-### c. Lancer le Script
--   Ouvre un terminal dans le dossier contenant le script.
--   Exécute-le avec la commande :
-    ```
-    python Serveur_fichiers_local_GUI_v2.py
-    ```
--   Une fenêtre GUI devrait s'ouvrir.
-* * * * *
-4\. Utilisation de l'Interface Graphique
-----------------------------------------
-Une fois l'application lancée, voici comment l'utiliser :
-### a. Sélection du Dossier à Partager
--   **Champ "Choisissez un dossier à partager"** : Clique sur le bouton **Parcourir** pour ouvrir une fenêtre de sélection de dossier.
--   Choisis le dossier que tu souhaites partager. Le chemin du dossier apparaîtra dans le champ de texte.
-### b. Choix du Port
--   **Champ "Port réseau"** : Le port par défaut est `5000`. Tu peux modifier ce numéro si nécessaire.
--   Attention : certains ports (ex. 6000 à 6007, 6063) sont souvent bloqués par les navigateurs. Le script te préviendra si tu choisis l'un de ces ports.
-### c. Démarrer le Serveur
--   Clique sur le bouton **Démarrer le Serveur**.
--   Le script vérifie que le dossier est sélectionné et que le port est valide.
--   Une fois démarré, l'adresse du serveur (par exemple, `http://192.168.x.x:5000`) s'affiche dans le champ dédié.
-### d. Accéder au Serveur
+**2\. Lancer le script**
+------------------------
 
--   Clique sur **Ouvrir la page du serveur** pour lancer ton navigateur par défaut et visualiser le contenu du dossier partagé.
--   Tu peux naviguer dans les fichiers, télécharger des fichiers ou accéder à une page `index.html` si elle existe dans le dossier.
-* * * * *
-5\. Fonctionnalités du Serveur
-------------------------------
-Le serveur Flask intégré gère :
--   **Navigation sécurisée** :\
-    Seuls les fichiers et dossiers dans le dossier partagé sont accessibles.\
-    Les accès non autorisés sont bloqués (code 403).
-    
-    Si une page web *index.html* est dans un dossier, le serveur affichera la page web en question.
--   **Affichage dynamique des fichiers** :\
-    Le serveur liste les dossiers et fichiers (avec leur taille en Mo) dans le dossier sélectionné.
--   **Téléchargement de fichiers** :\
-    Via l'URL `/download/<nom_du_fichier>`, le téléchargement est possible avec un log affichant l'adresse IP du client et la date/heure.
--   **Logs** :\
-    Les messages (démarrage, erreurs, téléchargements) s'affichent dans la zone de logs de l'interface.
-* * * * *
-6\. Arrêt du Serveur
---------------------
--   Pour arrêter le serveur, clique sur **Arrêter le Serveur** (le bouton change de texte lorsque le serveur est actif).
--   Le script arrête proprement le serveur Flask et libère le port utilisé.
-* * * * *
-7\. Conseils et Dépannage
--------------------------
--   **Vérifier le Port** :\
-    Si le port est déjà utilisé par une autre application, le script affichera un message d'erreur. Choisis alors un autre port.
+Ouvrez un terminal dans le dossier où se trouve le script et exécutez :
 
--   **Droits d'accès** :\
-    Si tu rencontres des problèmes d'accès ou de permission, vérifie que le dossier sélectionné est accessible en lecture.
--   **Logs et messages** :\
-    Consulte la zone de logs pour plus d'informations en cas de dysfonctionnement.
--   **Utilisation en réseau** :\
-    Pour accéder au serveur depuis un autre appareil du réseau local, utilise l'adresse IP affichée dans l'interface.
+```
+python Serveur_fichiers_local_GUI_v28.py
+```
+
+Si vous utilisez **Python 3.12** explicitement, utilisez :
+
+```
+python3 Serveur_fichiers_local_GUI_v28.py
+```
+
+L'interface graphique du serveur devrait s'afficher.
+
+* * * * *
+
+**3\. Utilisation de l'interface graphique**
+--------------------------------------------
+
+### **Sélectionner un dossier à partager**
+
+1.  Cliquez sur **Parcourir** et sélectionnez un dossier.
+
+2.  Vérifiez que le chemin apparaît dans la barre de texte.
+
+### **Configurer le port**
+
+-   Par défaut, le serveur utilise le port **8080**.
+
+-   Vous pouvez modifier ce port si nécessaire, mais évitez les **ports bloqués** (6000-6007, 6063).
+
+-   **Attention** : Si un autre programme utilise déjà ce port, vous devrez en choisir un autre.
+
+### **Démarrer le serveur**
+
+-   Cliquez sur **"Démarrer le Serveur"**.
+
+-   L'adresse locale du serveur s'affiche (ex. `http://192.168.X.X:8080`).
+
+-   Vous pouvez copier cette adresse et l'ouvrir dans un navigateur.
+
+### **Accéder aux fichiers**
+
+-   Les fichiers du dossier partagé sont listés dans le navigateur.
+
+-   Vous pouvez **télécharger** un fichier en cliquant dessus.
+
+### **Gérer les extensions autorisées**
+
+-   Par défaut, seules certaines extensions sont accessibles (`.txt`, `.jpg`, `.mp3`, etc.).
+
+-   Vous pouvez **modifier cette liste** en entrant d'autres extensions dans le champ **Extensions autorisées**.
+
+### **Arrêter le serveur**
+
+-   Cliquez sur **"Arrêter le Serveur"**.
+
+-   Tous les partages sont fermés immédiatement.
+
+### **Vérifier les logs**
+
+-   La fenêtre affiche l'état du serveur et les événements (connexion d'un client, accès à un fichier...).
+
+-   Vous pouvez **effacer les logs** avec le bouton dédié.
+
+* * * * *
+
+**4\. Accès depuis un autre appareil**
+--------------------------------------
+
+Si vous voulez accéder au serveur depuis un autre appareil du **même réseau** :
+
+1.  Notez l'adresse locale affichée (`http://192.168.X.X:8080`).
+
+2.  Saisissez-la dans un navigateur sur un autre PC ou téléphone connecté au **même Wi-Fi**.
+
+3.  Vous devriez voir la liste des fichiers partagés.
+
+**⚠ Remarque :** Pour un accès depuis l'extérieur (Internet), il faudra configurer une **redirection de port** sur votre routeur, ce qui n'est pas recommandé pour la sécurité.
+
+* * * * *
+
