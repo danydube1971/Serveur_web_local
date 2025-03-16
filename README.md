@@ -3,6 +3,9 @@
 
 Ce script permet de lancer un **serveur de fichiers local** (ou d'afficher une page web index.html) via **Flask**, avec une interface graphique développée en **PyQt6**. Il permet de **partager un dossier** via un serveur HTTP accessible sur le réseau local.
 
+![Serveur_fichiers_local_GUI_v28](https://github.com/user-attachments/assets/2836f360-cbe5-4528-b280-a20a2bbf9765)
+
+
 * * * * *
 
 **1\. Pré-requis**
